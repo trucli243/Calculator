@@ -88,22 +88,24 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Location = new System.Drawing.Point(736, 112);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 124);
             this.button1.TabIndex = 2;
             this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.Location = new System.Drawing.Point(736, 261);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 112);
             this.button2.TabIndex = 3;
             this.button2.Text = "Trừ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
