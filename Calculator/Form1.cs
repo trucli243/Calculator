@@ -19,22 +19,45 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (textBox1.Text != String.Empty && textBox2.Text != String.Empty)
-            {
-                double a = double.Parse(textBox1.Text);
-                double b = double.Parse(textBox2.Text);
-                double c = a + b;
-                textBox3.Text = c.ToString(); 
-            }
+            int a = int.Parse(textBox1.Text);
+            int b = int.Parse(textBox2.Text);
+            Calculation c = new Calculator.Calculation(a, b);
+            textBox3.Text = c.Execute("+").ToString();
+            //if (textBox1.Text != String.Empty && textBox2.Text != String.Empty)
+            //{
+            //    double a = double.Parse(textBox1.Text);
+            //    double b = double.Parse(textBox2.Text);
+            //    double c = a + b;
+            //    textBox3.Text = c.ToString(); 
+            //}
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(textBox1.Text);
-            double b = double.Parse(textBox2.Text);
-            double c = a - b;
-            textBox3.Text = c.ToString();
+            int a = int.Parse(textBox1.Text);
+            int b = int.Parse(textBox2.Text);
+            Calculation c = new Calculator.Calculation(a, b);
+            textBox3.Text = c.Execute("-").ToString();
+            //double a = double.Parse(textBox1.Text);
+            //double b = double.Parse(textBox2.Text);
+            //double c = a - b;
+            //textBox3.Text = c.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int b = int.Parse(textBox2.Text);
+            Calculation c = new Calculator.Calculation(a, b);
+            textBox3.Text = c.Execute("*").ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int b = int.Parse(textBox2.Text);
+            Calculation c = new Calculator.Calculation(a, b);
+            textBox3.Text = c.Execute("/").ToString();
         }
     }
 }
